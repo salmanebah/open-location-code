@@ -25,7 +25,7 @@ void checkEncodeDecode(String csvLine) {
   num lng = double.parse(elements[1]);
   num len = int.parse(elements[2]);
   var want = elements[3];
-  var got = olc.encode(lat, lng, codeLength: len);
+  var got = olc.encode(lat, lng, codeLength: len as int);
   expect(got, equals(want));
 }
 
